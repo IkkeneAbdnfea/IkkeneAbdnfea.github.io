@@ -1,0 +1,580 @@
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.preloader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+    background: url(../images/777.gif) center no-repeat #7D43E8;
+}
+
+
+
+@font-face{
+    font-family: 'avenir';
+    src: url(./fonts/AvenirLTStd-Light.otf);
+    font-style: normal;
+    font-weight: 100;
+}
+@font-face{
+    font-family: 'avenir';
+    src: url(./fonts/AvenirLTStd-Black.otf);
+    font-style:normal;
+    font-weight: 700;
+}
+@font-face{
+    font-family: 'avenir';
+    src: url(./fonts/AvenirLTStd-Heavy.otf);
+    font-style: normal;
+    font-weight: 600;
+}
+
+
+
+*{
+    padding : 0px;
+    margin: 0px;
+    font-family: avenir;
+    font-weight: 100;
+    box-sizing: border-box;
+}
+
+.clear{
+    clear: both;
+}
+#head{
+    position: relative;
+}
+#infoPers{
+    background-color: #015761;
+    float: left;
+    width: 50%;
+    height: 679px;
+    position: relative;
+    background: #000;
+}
+#infoPers h3{ 
+    color: #F7DC4F;
+    font-size: 25px;
+    margin: 50px;
+    border: 4px solid #015761;
+    border-top:none;
+    width: 250px;
+    padding:5px 10px;
+    padding-top:40px;
+    margin-top: 0px;
+    
+}
+
+
+#nav{
+    margin-left: 50px;
+}
+#nav ul{
+    list-style-type: none;
+    position: relative;
+}
+#nav ul li{
+    display: inline-block;
+}
+#nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    padding-right: 35px;
+}
+#nav ul li a:hover{
+    color: #F7DC4F;
+}
+
+
+#infoPers  #hi{
+    margin-left: 100px;
+    margin-top: 150px;
+    font-size: 48px;
+    display: block;
+    color: #F7DC4F
+}
+#infoPers  #ai{
+    margin-top: 30px;
+    margin-left: 100px;
+    color: #FFFFFF;
+    font-size: 64px;
+    font-weight: 800px;
+}
+#infoPers #job{
+    margin-left: 100px;
+    color: #FFFFFF;
+    font-weight: 100;
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+
+#details{
+    width: 50%;
+    height: 679px;
+    float: left;
+    background: url("../images/background2.png") no-repeat;
+    background-size: 100%;
+}
+#transparenceDiv{
+    padding-top: 203px;
+    margin-top:0px;
+    background-color: rgba(0, 0 ,0,0.6);
+    width: 100%;
+    height: 679px;
+}
+#descr{
+    margin-bottom: 200px;
+    margin-left: 200px;
+    width: 60%;
+}
+
+.alignText{
+    color: #FFFFFF;
+    padding-top: 50px;
+}
+#aboutme{
+    background-color: #f1f0f0;
+    overflow: hidden;
+}
+.title{
+    padding-top: 50px;
+    color: #015761;
+    text-align: center;
+    font-weight: 700px;
+    font-size: 50px;
+}
+#aboutme p{
+    text-align: center;
+    margin: 10px auto;
+    width: 60%;
+}
+#aboutme h3{
+    width: 150px;
+    margin: 50px auto;
+    
+}   
+#aboutme h3 a{
+    text-decoration: none;
+    color: #015761;
+    background-color: #F7DC4F;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+#aboutme h3 a:hover{
+    color: #F7DC4F;
+    background-color: #015761;
+}
+
+.education-container{
+    width: 60%;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+
+.annee {
+    float: left;
+    padding: 0px 30px;
+    margin: 30px;
+    color: #000000;
+    font-weight: 700;
+    width: 30%;
+    text-align: right;
+}
+.school {
+    float: left;
+    padding: 30px 50px;
+    padding-right: 0px;
+    border-left: 2px solid black;
+    position: relative;
+    font-family: avenir;
+    font-weight: 700;
+    width:50%;
+}
+.school h4{
+    color:#47C63B;
+    font-family: 'avenir';
+    font-weight: 700;
+}
+.cercle{
+    width: 10px;
+    height: 10px;
+    border: 1px solid #015761;
+    border-radius: 100%;
+    position: absolute;
+    top: 31px;
+    left: -6px;
+    background-color: #FFFFFF;
+
+}
+.hide-extra-line{
+    width: 5px;
+    height: 31px;
+    background-color: #FFFFFF;
+    
+    position: absolute;
+    top:0;
+    left: -4px;
+    z-index: auto;
+}
+#social-media{
+    position: fixed;
+    right: 0px;
+    top:25%;
+    z-index: 3;
+}
+#social-media ul{
+    list-style-type: none;
+    background-color: #F7DC4F;
+    border-radius: 5px 0px 0px 5px;
+}
+#social-media ul li{
+    padding: 5px 0px;
+}
+#social-media ul li a{
+    text-decoration: none;
+    color: #015761;
+    padding: 5px;
+}
+#social-media li a:hover{
+    color: #F7DC4F;
+}
+
+#social-media ul li:hover{
+    background-color: #015761; 
+    border-radius: 5px 0px 0px 5px;
+}
+#more{
+    background: linear-gradient(20deg,#015761,#3b024d);
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+#more h1{
+    text-align: center;
+    padding: 50px;
+}
+#more p, .more-icons li{
+    display: inline-block;
+}
+.more-icons{
+    margin: 0px auto;
+    width: 84.1%;
+    padding-bottom: 50px;
+}
+.more-icons h4{
+    height: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.more-icons ul li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px 10px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    
+}
+
+#education1,#education2,#education3{
+    overflow: hidden;
+}
+#m1,#m2,#m3,#m4{
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+}
+
+
+.title-skills{
+    color: #F7DC4F;
+}
+.skills-div{
+ 
+    background: linear-gradient(30deg,#837373,#aa9797) ;
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+.skills-container{
+    width: 90%;
+    margin: 15px auto;
+    overflow: hidden;
+}
+.skills-elts{
+    float: left;
+    margin:10px 6.5%;
+    width:20%;
+}
+.skills-elts h2{
+    color: rgb(192, 192, 192);
+    margin: 50px 0px;
+}
+
+.progress-title{
+    font-size: 17px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin:  20px 0px;
+}
+.progress{
+    height: 3px;
+    background: #e4e3e3;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 30px;
+    overflow: visible;
+}
+.progress .progress-bar{
+    box-shadow: none;
+    position: relative;
+}
+.progress .progress-bar:after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    border: 1px solid #AF344F;
+    position: absolute;
+    top: -5px;
+    right: 4px;
+    transform: rotate(45deg);
+
+}
+.progress.coleur .progress-bar:after{
+   
+    background-color: #AF344F;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+
+@-webkit-keyframes animate-positive {
+    0% { width: 0; }
+}
+@keyframes animate-positive {
+    0% { width: 0; }
+}
+
+
+
+
+
+#experience-container{
+    width: 90%;
+    margin: 0px auto;
+   
+    overflow: hidden;
+    padding: 80px 0px;
+}
+
+.exp{
+    float: left;
+    border-radius: 10px;
+    width: 33.33%;
+    text-align: center;
+    border-collapse: collapse;
+}
+.exp img{
+    width: 300px;
+    height: 210px;
+    margin: 0px auto;
+}
+.exp h4{
+    color: #666;
+    padding: 50px 0px;   
+
+}
+.exp a{
+    text-decoration: none;
+}
+.img-border{
+    border: 1px solid #aaa;
+    width: 301px;
+    height: 100%;
+    background-color: #ddd;
+    border-radius: 0 0 5px 5px;
+    display: inline-block;
+}
+#footer p{
+    text-align: center;
+    padding: 50px;
+}
+
+
+
+/*background animation*/
+#particles-js{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*media*/
+
+@media(max-width: 1180px){
+    #infoPers  #ai{
+        margin-left: 60px;
+        font-size: 50px;
+    }
+    #infoPers  #hi{
+        margin-left: 60px;
+    }
+
+    #infoPers #job{
+        margin-left: 60px;
+    }
+
+    .education-container{
+        width: 90%;
+        
+    }
+    .skills-container{
+        width: 100%;
+    }
+    .skills-elts{
+        width:15%;
+    }
+}
+
+.hide{
+    background-color: #015761;
+    display: none;
+    cursor: pointer;
+}
+/*media (phone)*/
+
+@media(max-width:768px){
+    #infoPers{
+        float: none;
+        width:100%;
+    }
+ 
+    #details{
+        width:100%;
+    }
+    #infoPers h3{ 
+        margin: 0px auto;
+        margin-bottom: 20px;
+        padding-top:50px;
+        text-align: center;
+    }
+    #ul-container{
+        width : 100%;
+        margin : 0px auto;
+    }
+    #nav{
+        margin: 0px;
+    }
+    #nav ul{
+        width:100%;
+        text-align: center;
+
+        
+    }
+  
+    #nav ul li a {
+         padding-right: 15px;
+    }
+    #infoPers #ai,#infoPers #hi,#infoPers #job{
+        text-align: center;
+        margin: 10px auto;
+    }
+    #infoPers #ai{
+        width : 80%;
+        font-size: 40px;
+    }
+    #infoPers #job{
+        width : 80%;
+        
+    }
+    #infoPers #hi{
+        margin: 40px auto;
+        
+    }
+    /*hide social media for now*/
+    #social-media{
+        display: none;
+    }
+
+    
+
+    #aboutme h3 {
+        width : 80%;
+        padding :0;
+        
+        text-align: center;
+    }
+    #descr{
+        
+        margin : 30px auto;
+    }
+
+    #details{
+        background: url("../images/background2.png") no-repeat;
+    }
+    .education-container{
+        width: 80%; 
+    }
+    .school,.annee{
+        border:0px;
+        margin: 5px auto;  
+        padding:0px;
+        width: 100%;
+    }
+    .annee{
+        margin-top:40px;
+        color: #000000;
+        text-align:left;
+    }
+    .cercle{
+        display: none;
+    }
+    
+    .skills-elts{
+        float: none;
+        width:60%;
+        margin: 0 auto;
+        padding:0;
+    }
+    .exp{
+        float: none;
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    
+
+    .more-icons h4{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    
+
+    [class^="fa-"], [class*=" fa-"] {
+        display: inline-block;
+        width: 100%;
+        padding :40px 0;
+    }
+
+    .more-icons ul li{
+        display: inline;
+        text-align: center;
+    }
+    #m1,#m2,#m3,#m4{
+        display: block;
+        margin: 0px auto;
+        width:100%;
+        
+    }
+   
+    
+}
+
