@@ -9,15 +9,16 @@ $(window).on('load', function(){
 
 $(function(){
   
-    animateDiv("#school");
-    animateDiv("#email");
-    animateDiv("#phone");
-    animateDiv("#age");
+    // animateDiv("#school");
+    // animateDiv("#email");
+    // animateDiv("#phone");
+    // animateDiv("#age");
 
     ///////////////////////
     function animateDiv(idd){
             var positionTop = $(window).scrollTop();
-            var positionBottom = positionTop+ window.innerHeight;
+			var positionBottom = positionTop+ window.innerHeight;
+			console.log("id:"+idd);
             var divTop = $(idd).offset().top;
             var divBottom = divTop+$(idd).height();
             if(positionTop<divTop && positionBottom>divBottom){ 
@@ -55,14 +56,14 @@ $(function(){
         var newOtherSkillsHeight = $("#web-dev").height();
         $("#other-skills").height(newOtherSkillsHeight);
         // appliying animation on divs
-        animateDiv("#school");
-        animateDiv("#email");
-        animateDiv("#phone");
-        animateDiv("#age");
+        // animateDiv("#school");
+        // animateDiv("#email");
+        // animateDiv("#phone");
+        // animateDiv("#age");
 
-        animateDiv("#education1");
-        animateDiv("#education2");
-        animateDiv("#education3");
+        // animateDiv("#education1");
+        // animateDiv("#education2");
+        // animateDiv("#education3");
 
         animateDiv("#prog-and-db");
         animateDiv("#web-dev");

@@ -31,30 +31,54 @@
     font-style: normal;
     font-weight: 600;
 }
-
-
+@font-face{
+    font-family: 'MaisonMonoRegular';
+    src: url(./fonts/MaisonNeueMono-Regular.otf);
+    font-style: normal;
+    font-weight: 100;
+}
+@font-face{
+    font-family: 'MaisonMonoBold';
+    src: url(./fonts/MaisonNeueMono-Bold.otf);
+    font-style: normal;
+    font-weight: 100;
+}@font-face{
+    font-family: 'MaisonMonoBoldItalic';
+	src: url(./fonts/MaisonNeueMono-BoldItalic.otf);
+    font-style: normal;
+    font-weight: 100;
+}@font-face{
+    font-family: 'MaisonMonoItalic';
+    src: url(./fonts/MaisonNeueMono-Italic.otf);
+    font-style: normal;
+    font-weight: 100;
+}
 
 *{
     padding : 0px;
     margin: 0px;
-    font-family: avenir;
+    font-family: MaisonMonoRegular;
     font-weight: 100;
     box-sizing: border-box;
 }
-
+#container{
+	background-color: #f4f6fa;
+}
 .clear{
     clear: both;
 }
 #head{
-    position: relative;
+	position: relative;
+	background: linear-gradient(90deg,#5436bf,#5436bf) ;
+	overflow: hidden;
 }
 #infoPers{
-    background-color: #015761;
+    /* background-color: #015761; */
     float: left;
     width: 50%;
     height: 679px;
     position: relative;
-    background: #000;
+    /* background: #000; */
 }
 #infoPers h3{ 
     color: #F7DC4F;
@@ -80,7 +104,7 @@
     display: inline-block;
 }
 #nav ul li a{
-    color: #ffffff;
+    color: #f0f0f0;
     text-decoration: none;
     padding-right: 35px;
 }
@@ -90,33 +114,42 @@
 
 
 #infoPers  #hi{
-    margin-left: 100px;
-    margin-top: 150px;
-    font-size: 48px;
+    margin-left: 0px;
+    margin-top: 80px;
+    font-size: 24px;
     display: block;
-    color: #F7DC4F
+	color: #ff4fa8;
+	
 }
 #infoPers  #ai{
-    margin-top: 30px;
-    margin-left: 100px;
-    color: #FFFFFF;
-    font-size: 64px;
-    font-weight: 800px;
+    margin-top: 10px;
+    margin-left: 0px;
+    color: #ffffff;
+    font-size: 42px;
+	font-weight: 800px;
+	font-family: MaisonMonoBold;
 }
 #infoPers #job{
-    margin-left: 100px;
-    color: #FFFFFF;
+    margin-left: 0px;
+    color: #ffffff;
     font-weight: 100;
     margin-bottom: 100px;
     margin-top: 20px;
+}
+
+.contactMe{
+	margin-top: 50px;
 }
 
 #details{
     width: 50%;
     height: 679px;
     float: left;
-    background: url("../images/background2.png") no-repeat;
-    background-size: 100%;
+    background: url("../images/welcome-illustrationMe1.svg") no-repeat;
+	background-size: 50%;
+	background-position-x: right;
+	background-position-y: bottom;
+	background-attachment: fixed;
 }
 #transparenceDiv{
     padding-top: 203px;
@@ -136,21 +169,47 @@
     padding-top: 50px;
 }
 #aboutme{
-    background-color: #f1f0f0;
-    overflow: hidden;
+    
+	overflow: hidden;
+	
+	margin: auto;
+	width: 90%;
+}
+.aboutMecontainer{
+	background-color: #ffffff;
+	overflow: hidden;
+	border-radius: 15px;
+	box-shadow:  -6px 14px 20px 1px rgb(178, 189, 255 ,20%);
+	margin: 50px;
+}
+.myImage{
+	width: 50%;
+	float: left;
+	background: url('../images/profilePicture.png') no-repeat;
+	background-size: cover;
+	height: 535px;
 }
 .title{
-    padding-top: 50px;
-    color: #015761;
+	margin-top: 200px;
+	margin-bottom: 50px;
+    color: #6066d5;
     text-align: center;
     font-weight: 700px;
-    font-size: 50px;
+	font-size: 50px;
+	font-family: 'MaisonMonoBold';
 }
 #aboutme p{
-    text-align: center;
-    margin: 10px auto;
-    width: 60%;
+    text-align: left;
+	font-size: 24px;
+	line-height: 54px;
 }
+.intro{
+	padding: 50px;
+	width: 50%;
+	float: right;
+	height: 535px;
+}
+
 #aboutme h3{
     width: 150px;
     margin: 50px auto;
@@ -170,36 +229,43 @@
     background-color: #015761;
 }
 
-.education-container{
-    width: 60%;
-    margin: 50px auto;
-    overflow: hidden;
+
+.school,.annee{
+	border:0px;
+	margin: 2px auto;  
+	padding:0px;
+	width: 100%;
 }
 
+.cercle{
+	display: none;
+}
 
 .annee {
     float: left;
-    padding: 0px 30px;
-    margin: 30px;
-    color: #000000;
     font-weight: 700;
-    width: 30%;
-    text-align: right;
+	margin-top:40px;
+	color: #3f006f;
+	text-align:left;
 }
 .school {
     float: left;
-    padding: 30px 50px;
+   
     padding-right: 0px;
-    border-left: 2px solid black;
+    /* border-left: 2px solid black; */
     position: relative;
     font-family: avenir;
     font-weight: 700;
     width:50%;
 }
 .school h4{
-    color:#47C63B;
-    font-family: 'avenir';
-    font-weight: 700;
+    color:#fff;
+	font-weight: 700;
+	font-family: 'MaisonMonoBoldItalic';
+	margin-bottom: 6px;
+}
+.school h5{
+    color:#cfe3ff;
 }
 .cercle{
     width: 10px;
@@ -212,10 +278,46 @@
     background-color: #FFFFFF;
 
 }
+.education-container{
+    margin: 50px auto;
+    overflow: hidden;
+	background: linear-gradient(60deg, #1794ff, #2196F3, #0daeeb);
+	overflow: hidden;
+	border-radius: 15px;
+	margin: 50px;
+	position: relative;
+}
+.relative-hat{
+	position: relative;
+}
+.hat{
+	position: absolute;
+	left: 4px;
+	top: -37px;
+	z-index: 1;
+}
+/* .educationIllustration{
+	width: 50%;
+	float: right;
+	background: url('../images/education-illustration.svg') no-repeat;
+	background-size: cover;
+	height: 581px;
+	position: absolute;
+	right: 0;
+} */
+.educationInfo{
+	padding: 50px;
+	width: 100%;
+	float: left;
+	height: 581px;
+	background: url('../images/education-illustration.svg') no-repeat;
+	background-position: right;
+}
+
 .hide-extra-line{
     width: 5px;
     height: 31px;
-    background-color: #FFFFFF;
+    background-color: #1b95fb;
     
     position: absolute;
     top:0;
@@ -250,26 +352,32 @@
     border-radius: 5px 0px 0px 5px;
 }
 #more{
-    background: linear-gradient(20deg,#015761,#3b024d);
-    color: #FFFFFF;
-    opacity: 0.7;
+    background: #131313;
+	color: #FFFFFF;
+	padding-top: 150px;
+	padding-bottom: 150px;	
+	margin-top: 120px;
 }
 #more h1{
     text-align: center;
-    padding: 50px;
+	padding: 50px;
+	color: #00BCD4;
 }
 #more p, .more-icons li{
     display: inline-block;
 }
 .more-icons{
     margin: 0px auto;
-    width: 84.1%;
-    padding-bottom: 50px;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	column-gap: 50px;
+	row-gap: 50px;
+	width: 90%;
 }
 .more-icons h4{
     height: 50px;
     margin-bottom: 10px;
-    text-align: center;
+	text-align: center;
 }
 
 .more-icons ul li{
@@ -280,30 +388,30 @@
     margin-bottom: 25px;
     
 }
-
+.fa{
+	margin-top: 50px;
+}
 #education1,#education2,#education3{
     overflow: hidden;
 }
 #m1,#m2,#m3,#m4{
     display: inline-block;
-    width: 24%;
+    /* width: 24%; */
     text-align: center;
 }
 
 
-.title-skills{
-    color: #F7DC4F;
-}
+
 .skills-div{
  
-    background: linear-gradient(30deg,#837373,#aa9797) ;
     overflow: hidden;
     padding-bottom: 50px;
 }
 .skills-container{
     width: 90%;
     margin: 15px auto;
-    overflow: hidden;
+	overflow: hidden;
+
 }
 .skills-elts{
     float: left;
@@ -311,19 +419,19 @@
     width:20%;
 }
 .skills-elts h2{
-    color: rgb(192, 192, 192);
+    color: #26324e;
     margin: 50px 0px;
 }
 
 .progress-title{
     font-size: 17px;
     font-weight: 400;
-    color: #FFFFFF;
+    color: #5436bf;
     margin:  20px 0px;
 }
 .progress{
     height: 3px;
-    background: #e4e3e3;
+    background: #9396cc;
     border-radius: 0;
     box-shadow: none;
     margin-bottom: 30px;
@@ -337,7 +445,7 @@
     content: "";
     width: 1px;
     height: 1px;
-    border: 1px solid #AF344F;
+    border: 1px solid #4f79d6;
     position: absolute;
     top: -5px;
     right: 4px;
@@ -346,7 +454,7 @@
 }
 .progress.coleur .progress-bar:after{
    
-    background-color: #AF344F;
+    background-color: #4f79d6;
     width: 10px;
     height: 10px;
     border-radius: 100%;
@@ -367,42 +475,95 @@
 #experience-container{
     width: 90%;
     margin: 0px auto;
-   
     overflow: hidden;
-    padding: 80px 0px;
+	padding: 80px 0px;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	column-gap: 50px;
+	row-gap: 50px;
 }
 
 .exp{
     float: left;
     border-radius: 10px;
-    width: 33.33%;
     text-align: center;
-    border-collapse: collapse;
+	border-collapse: collapse;
 }
 .exp img{
-    width: 300px;
-    height: 210px;
+    /* width: 300px;
+    height: 210px; */
     margin: 0px auto;
 }
 .exp h4{
-    color: #666;
+    color: #0e6186;
     padding: 50px 0px;   
-
+	text-align: left;
+	padding-left: 28px;
+	font-size: 18px;
+	padding-top: 0px;
 }
+
+.exp h3{
+    color: #03A9F4;
+    padding: 50px 0px;   
+	text-align: left;
+	padding-left: 28px;
+	font-size: 24px;
+}
+
+
 .exp a{
     text-decoration: none;
 }
 .img-border{
-    border: 1px solid #aaa;
-    width: 301px;
+    width: 100%;
     height: 100%;
-    background-color: #ddd;
-    border-radius: 0 0 5px 5px;
-    display: inline-block;
+    background-color: #fff;
+    border-radius: 15px;
+	display: inline-block;
+}
+
+#project1{
+	background: url('../images/msg.PNG') no-repeat;
+	background-size: 100%;
+	height: 195px;
+	border-radius: 15px;
+}
+#project2{
+	background: url('../images/webst.jpg') no-repeat;
+	background-size: 100%;
+	height: 195px;
+	border-radius: 15px;
+}
+#project3{
+	background: url('../images/cublor.PNG') no-repeat;
+	background-size: 100%;
+	height: 195px;
+	border-radius: 15px;
+}
+#project4{
+	background: url('../images/recipes.PNG') no-repeat;
+	background-size: 100%;
+	height: 195px;
+	border-radius: 15px;
+}
+#project5{
+	background: url('../images/luigi.jpg') no-repeat;
+	background-size: 100%;
+	height: 195px;
+	border-radius: 15px;
+}
+#project6{
+	background: url('../images/Mercedes.jpg') no-repeat;
+	background-size: 100%;
+	height: 195px;
+	border-radius: 15px;
 }
 #footer p{
     text-align: center;
-    padding: 50px;
+	padding: 20px;
+	color: #03A9F4;
+	background-color: white;
 }
 
 
@@ -420,11 +581,11 @@
 
 @media(max-width: 1180px){
     #infoPers  #ai{
-        margin-left: 60px;
+        margin-left: 0px;
         font-size: 50px;
     }
     #infoPers  #hi{
-        margin-left: 60px;
+        margin-left: 0px;
     }
 
     #infoPers #job{
@@ -441,6 +602,20 @@
     .skills-elts{
         width:15%;
     }
+}
+
+
+@media(min-width: 1540px){
+    #experience-container{
+		grid-template-columns: auto auto auto auto;
+	}
+}
+
+
+@media(max-width: 1138px){
+    #experience-container{
+		grid-template-columns: auto auto ;
+	}
 }
 
 .hide{
@@ -462,7 +637,8 @@
     #infoPers h3{ 
         margin: 0px auto;
         margin-bottom: 20px;
-        padding-top:20px;
+		padding-top:20px;
+		width: 50px;
     }
     #ul-container{
         width : 100%;
@@ -504,7 +680,13 @@
         display: none;
     }
 
-    
+    .myImage{
+		width: 100%;
+		float: none;
+	}
+	.intro{
+		width: 100%;
+	}
 
     #aboutme h3 {
         width : 80%;
@@ -518,7 +700,7 @@
     }
 
     #details{
-        background: url("../images/background2.png") no-repeat;
+        background: url("../images/welcome-illustrationMe1.svg") no-repeat;
     }
     .education-container{
         width: 80%; 
@@ -543,7 +725,10 @@
         width:60%;
         margin: 0 auto;
         padding:0;
-    }
+	}
+	#experience-container{
+		grid-template-columns: auto;
+	}
     .exp{
         float: none;
         width: 100%;
@@ -561,20 +746,128 @@
     [class^="fa-"], [class*=" fa-"] {
         display: inline-block;
         width: 100%;
-        padding :40px 0;
+		padding :40px 0;
+
     }
 
     .more-icons ul li{
         display: inline;
         text-align: center;
-    }
+	}
+	.more-icons{
+		grid-template-columns: auto ;
+	}
     #m1,#m2,#m3,#m4{
         display: block;
         margin: 0px auto;
-        width:100%;
+		width:100%;
         
-    }
-   
+	}
+
+	
+	#details{
+		background-position: bottom;
+		background-attachment: fixed;
+	}
     
 }
+@media(max-width: 1112px) {
+	.educationInfo{
+		height: 486px;
+		padding-top: 25px;
+	}
+}
+@media(max-width: 968px){
+	.educationInfo{
+		padding-top: 0px;
+		height: 451px;
+	}
+}
+@media(max-width: 854px){
+	.educationInfo{
+		height: 375px;
+	}
+	.annee{
+		font-size: 12px;
+		margin-top: 35px;
+	}
+	.school h4{
+		font-size: 14px;
+		margin-bottom: 1px;
+	}
+}
 
+@media(max-width: 768px){
+	.educationInfo{
+		height: 861px;
+		background-position: bottom;
+		padding-top: 50px;
+	}
+	.annee{
+		margin-top: 40px;
+		font-size: 14px;
+	}
+
+	.school h4{
+		font-size: 16px;
+	}
+}
+
+@media(max-width: 1238px){
+	#aboutme p{
+		line-height: 48px;
+	}
+}
+
+@media(max-width: 1146px){
+	.myImage{
+		height: 598px;
+	}	
+}
+
+@media(max-width: 1082px){
+	.myImage{
+		height: 613px;
+	}	
+}
+
+
+
+@media(max-width: 1058px){
+	.intro{
+		width: 100%;
+	}
+	.myImage{
+		width: 100%;
+	}
+}
+@media(max-width: 626px){
+	.intro{
+		height: 700px;
+	}
+	
+}
+
+@media(max-width: 527px){
+	.intro{
+		height: 830px;
+	}
+	.myImage{
+		width: 100%;
+		height: 500px;
+	}
+}
+
+@media(max-width: 490px){
+	.intro{
+		height: 780px;
+	}
+	.myImage{
+		width: 100%;
+		height: 243px;
+	}
+	#aboutme p{
+		line-height: 30px;
+		font-size: 24px;
+	}
+}
