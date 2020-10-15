@@ -18,7 +18,6 @@ $(function(){
     function animateDiv(idd){
             var positionTop = $(window).scrollTop();
 			var positionBottom = positionTop+ window.innerHeight;
-			console.log("id:"+idd);
             var divTop = $(idd).offset().top;
             var divBottom = divTop+$(idd).height();
             if(positionTop<divTop && positionBottom>divBottom){ 
@@ -78,14 +77,6 @@ $(function(){
 
    
 
-
-    $(".exp").mouseover(function(){
-        $(this).addClass("animated pulse");
-    }).mouseout(function(){
-        $(this).removeClass("animated pulse");
-    });
-
-    
 
     
     //sroll smoothly to elements

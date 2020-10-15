@@ -207,7 +207,7 @@
 	padding: 50px;
 	width: 50%;
 	float: right;
-	height: 535px;
+	height: 435px;
 }
 
 #aboutme h3{
@@ -352,11 +352,11 @@
     border-radius: 5px 0px 0px 5px;
 }
 #more{
-    background: #131313;
 	color: #FFFFFF;
 	padding-top: 150px;
 	padding-bottom: 150px;	
 	margin-top: 120px;
+	background: url(../images/moreback.svg) no-repeat right #5537c0
 }
 #more h1{
     text-align: center;
@@ -411,12 +411,14 @@
     width: 90%;
     margin: 15px auto;
 	overflow: hidden;
-
+	display: grid;
+	grid-template-columns: auto auto auto;
+	column-gap: 50px;
+	row-gap: 30px;
 }
 .skills-elts{
-    float: left;
-    margin:10px 6.5%;
-    width:20%;
+	float: left;
+	
 }
 .skills-elts h2{
     color: #26324e;
@@ -488,6 +490,11 @@
     border-radius: 10px;
     text-align: center;
 	border-collapse: collapse;
+
+	transition: all .9s ease-in-out;
+}
+.exp :hover{
+	transform: scale(1.05);
 }
 .exp img{
     /* width: 300px;
@@ -495,20 +502,21 @@
     margin: 0px auto;
 }
 .exp h4{
-    color: #0e6186;
-    padding: 50px 0px;   
+    color: #0e6186;  
 	text-align: left;
 	padding-left: 28px;
-	font-size: 18px;
+	font-size: 14px;
 	padding-top: 0px;
+	padding-bottom: 28px;
 }
 
 .exp h3{
     color: #03A9F4;
-    padding: 50px 0px;   
+	padding: 25px 28px;
+	padding-top: 25px;   
 	text-align: left;
-	padding-left: 28px;
-	font-size: 24px;
+	font-size: 16px;
+	padding-bottom: 6px;
 }
 
 
@@ -562,8 +570,8 @@
 #footer p{
     text-align: center;
 	padding: 20px;
-	color: #03A9F4;
-	background-color: white;
+	color: #fff;
+	background-color: #5537c0;
 }
 
 
@@ -596,12 +604,8 @@
         width: 90%;
         
     }
-    .skills-container{
-        width: 100%;
-    }
-    .skills-elts{
-        width:15%;
-    }
+   
+    
 }
 
 
@@ -630,7 +634,7 @@
         float: none;
         width:100%;
     }
- 
+	
     #details{
         width:100%;
     }
@@ -722,7 +726,6 @@
     
     .skills-elts{
         float: none;
-        width:60%;
         margin: 0 auto;
         padding:0;
 	}
@@ -754,7 +757,8 @@
         display: inline;
         text-align: center;
 	}
-	.more-icons{
+
+	.more-icons,.skills-container{
 		grid-template-columns: auto ;
 	}
     #m1,#m2,#m3,#m4{
@@ -769,7 +773,25 @@
 		background-position: bottom;
 		background-attachment: fixed;
 	}
-    
+	
+	
+	.aboutMecontainer{
+		margin: 0px;
+	}
+	.intro{
+		
+		padding: 30px;
+	}
+	.intro p {
+		font-size: 12px;
+	}
+	
+	#more{
+		background-image: url("../images/morebackr.svg");
+		background-position-y: top;
+		background-position-x: right;
+		background-size: 100%;
+	}
 }
 @media(max-width: 1112px) {
 	.educationInfo{
@@ -843,14 +865,14 @@
 }
 @media(max-width: 626px){
 	.intro{
-		height: 700px;
+		height: 540px;
 	}
 	
 }
 
 @media(max-width: 527px){
 	.intro{
-		height: 830px;
+		height: 504px;
 	}
 	.myImage{
 		width: 100%;
@@ -860,7 +882,7 @@
 
 @media(max-width: 490px){
 	.intro{
-		height: 780px;
+		height: 366px;
 	}
 	.myImage{
 		width: 100%;
@@ -868,6 +890,28 @@
 	}
 	#aboutme p{
 		line-height: 30px;
-		font-size: 24px;
+		font-size: 14px;
 	}
+
+	.title{
+		font-size: 32px;
+	}
+}
+@media(max-width: 1198px){
+	
+	#nav ul li {
+		font-size: 16px;
+	}	
+}
+
+@media(max-width: 1154px){
+	#nav ul li {
+		font-size: 12px;
+	}	
+}
+
+@media(max-width: 977px){
+	#nav ul li {
+		padding-right: 0px;
+	}	
 }
