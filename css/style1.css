@@ -475,10 +475,10 @@
 
 
 #experience-container{
-    width: 90%;
+    width: 95%;
     margin: 0px auto;
     overflow: hidden;
-	padding: 80px 0px;
+	padding: 80px 25px;
 	display: grid;
 	grid-template-columns: auto auto auto;
 	column-gap: 50px;
