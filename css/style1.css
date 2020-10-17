@@ -93,7 +93,7 @@
     /* background-color: #015761; */
     float: left;
     width: 50%;
-    height: 679px;
+    /* height: 679px; */
     position: relative;
     /* background: #000; */
 }
@@ -388,19 +388,19 @@
     background-color: #015761; 
     border-radius: 5px 0px 0px 5px;
 }
-#more{
+#more-container{
 	color: #FFFFFF;
 	padding-top: 150px;
 	padding-bottom: 150px;	
 	margin-top: 120px;
 	background: url(../images/moreback.svg) no-repeat right #5537c0
 }
-#more h1{
+#more-container h1{
     text-align: center;
 	padding: 50px;
 	color: #00BCD4;
 }
-#more p, .more-icons li{
+#more-container-container p, .more-icons li{
     display: inline-block;
 }
 .more-icons{
@@ -427,6 +427,9 @@
 }
 .fa{
 	margin-top: 50px;
+}
+.more-fa{
+	margin-top: 25px;
 }
 #education1,#education2,#education3{
     overflow: hidden;
@@ -622,8 +625,9 @@
 #footer p{
     text-align: center;
 	padding: 20px;
-	color: #fff;
-	background-color: #5537c0;
+	color: #ff4fa8;
+	background-color: #5436bf;
+	font-family: MaisonMonoBoldItalic;
 }
 
 
@@ -692,25 +696,7 @@
 		padding-top:20px;
 		width: 50px;
     }
-    /* #ul-container{
-        width : 100%;
-        margin : 0px auto;
-    }
-    #nav{
-        margin: 0px;
-    }
-    #nav ul{
-		width: 90%;
-		text-align: center;
-		margin: auto;
-    }
-  
-    #nav ul li a {
-        padding-right: 15px;
-	}
-	#nav ul li:last-child a{
-        padding-right: 0px;
-	} */
+   
 
 	#header{
 		padding-left: 20px;
@@ -720,9 +706,7 @@
 	#nav ul li a{
 		display: none;
 	}
-	/* #ul-container.responsive {
-		position: relative;
-	} */
+	
 
 	#ul-container.responsive .icon {
 		position: absolute;
@@ -907,11 +891,16 @@
 		font-size: 12px;
 	}
 	
-	#more{
+	#more-container{
 		background-image: url("../images/morebackr.svg");
 		background-position-y: top;
 		background-position-x: right;
 		background-size: 100%;
+	}
+	.more-fa{
+		margin-top: 0px;
+		padding-top: 20px;
+		padding-bottom: 70px;
 	}
 }
 @media(max-width: 1112px) {

@@ -86,14 +86,20 @@ $(function(){
         var position = $($(this).attr("href")).offset().top;
     
         $("body, html").animate({
-            scrollTop: position
-        } ,900 );
+            scrollTop: position - 70
+		} ,900 );
+
+		// auto collapse menu on mobile
+		$(".icon").click();
+		$("#header").css("height","63.88px");
+		$("#header").css("box-shadow","none");
 	});
 	
 	// footer dynamic copyright year
 	$("#year").text( (new Date).getFullYear() );
 
 	
+	// responsive menu bar
 	$(".icon").click(function(){
 		$("#ul-container").toggleClass("responsive");
 		
@@ -118,6 +124,7 @@ $(function(){
 		
 	});
 
+	// when resizing the window, reset to defaults
 	$(window).resize(function(){
 		if(window.innerWidth > 768)
 		$("#header").css("height","63.88px");
