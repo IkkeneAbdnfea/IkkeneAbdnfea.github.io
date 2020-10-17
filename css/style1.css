@@ -801,6 +801,9 @@
         display: none;
     }
 
+	.aboutMecontainer{
+		box-shadow:  0px 10px 20px 1px rgb(178, 189, 255 ,20%);
+	}
     .myImage{
 		width: 100%;
 		float: none;

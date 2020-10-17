@@ -93,16 +93,8 @@ $(function(){
 	// footer dynamic copyright year
 	$("#year").text( (new Date).getFullYear() );
 
-	// fix the header on top when scrolling
-	// $("#header").sc(function(e){
-	// 	$(this).css("position","absolute")
-	// 		.css("top","0px")
-	// 		.css("left","500px")
-	// }
-	// );
-
+	
 	$(".icon").click(function(){
-		// $("#nav ul li a").css("display","block")
 		$("#ul-container").toggleClass("responsive");
 		
 		
@@ -114,6 +106,15 @@ $(function(){
 			$("#header").css("box-shadow","none");
 		}
 
+		//toggle icon
+		if($("#the-icon").hasClass("fa-bars")){
+			$("#the-icon").removeClass("fa-bars");
+			$("#the-icon").addClass("fa-times");
+		}else{
+			$("#the-icon").removeClass("fa-times");
+			$("#the-icon").addClass("fa-bars");
+		}
+
 		
 	});
 
@@ -122,5 +123,9 @@ $(function(){
 		$("#header").css("height","63.88px");
 		$("#ul-container").removeClass("responsive");
 		$("#header").css("box-shadow","none");
+
+		
+		$("#the-icon").removeClass("fa-times");
+		$("#the-icon").addClass("fa-bars");
 	})
 });
