@@ -90,6 +90,37 @@ $(function(){
         } ,900 );
 	});
 	
-	
+	// footer dynamic copyright year
 	$("#year").text( (new Date).getFullYear() );
+
+	// fix the header on top when scrolling
+	// $("#header").sc(function(e){
+	// 	$(this).css("position","absolute")
+	// 		.css("top","0px")
+	// 		.css("left","500px")
+	// }
+	// );
+
+	$(".icon").click(function(){
+		// $("#nav ul li a").css("display","block")
+		$("#ul-container").toggleClass("responsive");
+		
+		
+		if ($("#ul-container").hasClass("responsive")) {
+			$("#header").css("height","266px");
+			$("#header").css("box-shadow","-6px 14px 20px 1px rgb(0 0 105 / 20%)");
+		}else{
+			$("#header").css("height","63.88px");
+			$("#header").css("box-shadow","none");
+		}
+
+		
+	});
+
+	$(window).resize(function(){
+		if(window.innerWidth > 768)
+		$("#header").css("height","63.88px");
+		$("#ul-container").removeClass("responsive");
+		$("#header").css("box-shadow","none");
+	})
 });

@@ -63,14 +63,31 @@
 }
 #container{
 	background-color: #f4f6fa;
+	overflow: hidden;
+	position: relative;
 }
 .clear{
     clear: both;
 }
 #head{
-	position: relative;
-	background: linear-gradient(90deg,#5436bf,#5436bf) ;
+	background: #5436bf;
 	overflow: hidden;
+}
+
+#header{
+	padding-left: 50px;
+	overflow: hidden;
+	padding-top: 13px;
+	padding-bottom: 8px;
+	position: fixed;
+	width: 100%;
+	background-color: #5436bf;
+	z-index: 3;
+}
+#logo{
+	float: left;
+	overflow: hidden;
+	width: 50px;
 }
 #infoPers{
     /* background-color: #015761; */
@@ -94,36 +111,40 @@
 
 
 #nav{
-    margin-left: 50px;
+	float: right;
+	margin-top: 9px;
 }
 #nav ul{
     list-style-type: none;
     position: relative;
 }
 #nav ul li{
-    display: inline-block;
+	display: inline-block;
 }
 #nav ul li a{
     color: #f0f0f0;
     text-decoration: none;
-    padding-right: 35px;
+	padding-right: 35px;
+	font-family: MaisonMonoBoldItalic;
 }
 #nav ul li a:hover{
     color: #ff4fa8;
 }
-
+.icon{
+	display: none;
+}
 
 #infoPers  #hi{
-    margin-left: 0px;
-    margin-top: 80px;
+    margin-left: 50px;
+    margin-top: 150px;
     font-size: 24px;
     display: block;
 	color: #ff4fa8;
-	
+	font-family: MaisonMonoBoldItalic;
 }
 #infoPers  #ai{
     margin-top: 10px;
-    margin-left: 0px;
+    margin-left: 50px;
     color: #ffffff;
     font-size: 42px;
 	font-weight: 800px;
@@ -139,6 +160,22 @@
 
 .contactMe{
 	margin-top: 50px;
+	margin-left: 50px;
+}
+.contactMe ul{
+    list-style-type: none;
+    position: relative;
+}
+.contactMe ul li{
+    display: inline-block;
+}
+.contactMe ul li a{
+    color: #f0f0f0;
+    text-decoration: none;
+    padding-right: 35px;
+}
+.contactMe ul li a:hover{
+    color: #ff4fa8;
 }
 
 #details{
@@ -604,11 +641,7 @@
 
 @media(max-width: 1180px){
     #infoPers  #ai{
-        margin-left: 0px;
         font-size: 50px;
-    }
-    #infoPers  #hi{
-        margin-left: 0px;
     }
 
     #infoPers #job{
@@ -659,7 +692,7 @@
 		padding-top:20px;
 		width: 50px;
     }
-    #ul-container{
+    /* #ul-container{
         width : 100%;
         margin : 0px auto;
     }
@@ -677,7 +710,76 @@
 	}
 	#nav ul li:last-child a{
         padding-right: 0px;
+	} */
+
+	#header{
+		padding-left: 20px;
+	}
+	
+	
+	#nav ul li a{
+		display: none;
+	}
+	/* #ul-container.responsive {
+		position: relative;
+	} */
+
+	#ul-container.responsive .icon {
+		position: absolute;
+		right: 20px;
+		top: 22px;
+	}
+	#ul-container.responsive ul li{
+		width: 100%;
+	}
+	#ul-container.responsive ul li a {
+		float: none;
+		display: block;
+		text-align: left;
+		padding-bottom: 20px;
+	}
+	.ul-container{
+		position: relative;
+	}
+	#nav ul{
+		position: absolute;
+		top: 107px;
+		left: 20px;
+	}
+	.icon{
+		display: block;
+		color: white;
+		position: absolute;
+		right: 20px;
+		top: 22px;
+	}
+	.icon :hover{
+		color: #ff4fa8;
+	}
+	.icon i{
+		margin: 0px;
+		padding: 0px;
+	}
+	#nav {
+		margin: 0px;
+	}
+	
+	.contactMe{
+        margin: 0px;
     }
+    .contactMe ul{
+		width: 90%;
+		text-align: center;
+		margin: auto;
+    }
+  
+    .contactMe ul li a {
+        padding-right: 15px;
+	}
+	.contactMe ul li:last-child a{
+        padding-right: 0px;
+	}
+	
     #infoPers #ai,#infoPers #hi,#infoPers #job{
         text-align: center;
         margin: 10px auto;
@@ -692,7 +794,7 @@
     }
     #infoPers #hi{
         margin: 40px auto;
-        
+        margin-top: 200px;
     }
     /*hide social media for now*/
     #social-media{
@@ -917,19 +1019,21 @@
 	
 	#nav ul li {
 		font-size: 16px;
-	}	
+	}
+	.contactMe ul li {
+		font-size: 16px;
+	}		
 }
 
-@media(max-width: 1154px){
-	#nav ul li {
-		font-size: 12px;
-	}	
-}
 
 @media(max-width: 977px){
 	#nav ul li {
 		padding-right: 0px;
 	}	
+	.contactMe ul li {
+		padding-right: 0px;
+		margin-top: -50px;
+	}
 }
 @media(max-width: 292px){
 	#project1, #project2, #project3, #project4, #project5, #project6, #project7{
