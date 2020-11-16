@@ -425,7 +425,7 @@
     margin-bottom: 25px;
     
 }
-.fa{
+.fas{
 	margin-top: 50px;
 }
 .more-fa{
@@ -630,7 +630,16 @@
 	font-family: MaisonMonoBoldItalic;
 }
 
-
+#switch-dark-theme{
+	width: 2rem;
+	height: 2rem;
+	position: fixed;
+	bottom: 17px;
+	right: 7px;
+	background-color: #5436bf;
+	border-radius: 100px;
+	box-shadow: 0px 3px 20px 0px #6897ff;
+}
 
 /*background animation*/
 #particles-js{
@@ -660,6 +669,43 @@
     
 }
 
+/* dark theme */
+#head.dark{
+	background-color: #18191a;
+}
+#header.dark{
+	background-color: #18191a;
+}
+#container.dark{
+	background-color: #18191a;
+}
+#more-container.dark{
+	background-color: #18191a;
+}
+#footer p.dark{
+	background-color: #18191a;
+}
+.aboutMecontainer.dark{
+	background-color: #252525;
+	color: #d8d8d8;
+	box-shadow: none;
+}
+.img-border.dark{
+	background-color: #252525;
+}
+.skills-elts h2.dark{
+	color: #bdbdbd;
+}
+.progress-title{
+	color: #41abff;
+}
+#switch-dark-theme.dark{
+	background-color: #464646;
+	box-shadow: none;
+}
+.exp h4.dark{
+	color: #c1c1c1;
+}
 
 @media(min-width: 1540px){
     #experience-container{
@@ -679,14 +725,26 @@
     display: none;
     cursor: pointer;
 }
+.switch-fa{
+	position: relative;
+	top: 9px;
+	right: -8px;
+	margin-top: 0px;
+}
+
 /*media (phone)*/
+
+
 
 @media(max-width:768px){
     #infoPers{
         float: none;
         width:100%;
     }
-	
+	#infoPers #ai{
+		padding-bottom: 50px;
+		font-size: 30px;
+	}
     #details{
         width:100%;
     }
@@ -853,9 +911,12 @@
     [class^="fa-"], [class*=" fa-"] {
         display: inline-block;
         width: 100%;
-		padding :40px 0;
+		margin :40px 0;
 
-    }
+	}
+	.switch-fa{
+		margin: 0px;
+	}
 
     .more-icons ul li{
         display: inline;
@@ -900,7 +961,7 @@
 	.more-fa{
 		margin-top: 0px;
 		padding-top: 20px;
-		padding-bottom: 70px;
+		margin-bottom: 70px;
 	}
 }
 @media(max-width: 1112px) {

@@ -135,4 +135,27 @@ $(function(){
 		$("#the-icon").removeClass("fa-times");
 		$("#the-icon").addClass("fa-bars");
 	})
+
+	// switch to dark theme
+	$("#switch-dark-theme").click(function(){
+		$(this).toggleClass("dark");
+		//toggle icon
+		if($("#dark-icon").hasClass("fa-moon")){
+			$("#dark-icon").removeClass("fa-moon");
+			$("#dark-icon").addClass("fa-sun");
+		}else{
+			$("#dark-icon").removeClass("fa-sun");
+			$("#dark-icon").addClass("fa-moon");
+		}
+		
+		$("#head").toggleClass("dark");
+		$("#header").toggleClass("dark");
+		$("#container").toggleClass("dark");
+		$("#more-container").toggleClass("dark");
+		$("#footer p").toggleClass("dark");
+		$(".aboutMecontainer").toggleClass("dark");
+		$(".img-border").toggleClass("dark");
+		$(".skills-elts h2").toggleClass("dark");
+		$(".exp h4").toggleClass("dark");
+	});
 });
