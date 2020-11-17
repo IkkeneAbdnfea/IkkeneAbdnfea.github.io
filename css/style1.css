@@ -813,6 +813,7 @@
 		width: 90%;
 		text-align: center;
 		margin: auto;
+		margin-bottom: 40px;
     }
   
     .contactMe ul li a {
@@ -911,7 +912,6 @@
     [class^="fa-"], [class*=" fa-"] {
         display: inline-block;
         width: 100%;
-		margin :40px 0;
 
 	}
 	.switch-fa{
