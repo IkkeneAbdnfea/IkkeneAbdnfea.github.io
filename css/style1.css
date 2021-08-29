@@ -222,7 +222,7 @@
 .myImage{
 	width: 50%;
 	float: left;
-	background: url('../images/profilePicture.png') no-repeat;
+	background: url('../images/profilePicture.jpg') no-repeat;
 	background-size: cover;
 	height: 535px;
 }
@@ -573,6 +573,23 @@
 	display: inline-block;
 }
 
+#project9{
+	background: url('../images/noyPOM.png') no-repeat;
+	background-size: 100%;
+	height: 195px;
+	border-radius: 15px;
+	pointer-events: none;
+}
+
+#project8{
+	background: url('../images/vshop.png') no-repeat;
+	background-size: 100%;
+	height: 195px;
+	border-radius: 15px;
+	pointer-events: none;
+}
+
+
 #project1{
 	background: url('../images/msg.PNG') no-repeat;
 	background-size: 100%;
@@ -609,7 +626,7 @@
 	pointer-events: none;
 }
 #project6{
-	background: url('../images/Mercedes.jpg') no-repeat;
+	background: url('../images/blender.png') no-repeat;
 	background-size: 100%;
 	height: 195px;
 	border-radius: 15px;
