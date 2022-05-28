@@ -78,6 +78,7 @@
 #head {
   background: #5436bf;
   overflow: hidden;
+  min-height: 100vh;
 }
 
 #header {
@@ -96,12 +97,14 @@
   width: 50px;
 }
 #infoPers {
-  /* background-color: #015761; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 50px;
   float: left;
   width: 50%;
-  /* height: 679px; */
+  min-height: 100vh;
   position: relative;
-  /* background: #000; */
 }
 #infoPers h3 {
   color: #f7dc4f;
@@ -140,7 +143,6 @@
 
 #infoPers #hi {
   margin-left: 50px;
-  margin-top: 150px;
   font-size: 24px;
   display: block;
   color: #ff4fa8;
@@ -184,7 +186,7 @@
 
 #details {
   width: 50%;
-  height: 679px;
+  height: 100vh;
   float: left;
   background: url("../images/welcome-illustrationMe1.svg") no-repeat;
   background-size: 50%;
@@ -461,6 +463,7 @@
 }
 .skills-elts {
   float: left;
+  width: 100%;
 }
 .skills-elts h2 {
   color: #26324e;
@@ -755,6 +758,7 @@
   #infoPers {
     float: none;
     width: 100%;
+    padding-left: 0;
   }
   #infoPers #ai {
     padding-bottom: 50px;
@@ -843,7 +847,7 @@
   }
   #infoPers #ai {
     width: 80%;
-    font-size: 40px;
+    font-size: 2.125rem;
   }
   #infoPers #job {
     width: 80%;
@@ -1102,11 +1106,5 @@
   #project6,
   #project7 {
     height: 112px;
-  }
-}
-
-@media (max-width: 1181px) {
-  #infoPers #ai {
-    font-size: 40px;
   }
 }
