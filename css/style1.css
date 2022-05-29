@@ -18,24 +18,6 @@
 }
 
 @font-face {
-  font-family: "avenir";
-  src: url(./fonts/AvenirLTStd-Light.otf);
-  font-style: normal;
-  font-weight: 100;
-}
-@font-face {
-  font-family: "avenir";
-  src: url(./fonts/AvenirLTStd-Black.otf);
-  font-style: normal;
-  font-weight: 700;
-}
-@font-face {
-  font-family: "avenir";
-  src: url(./fonts/AvenirLTStd-Heavy.otf);
-  font-style: normal;
-  font-weight: 600;
-}
-@font-face {
   font-family: "MaisonMonoRegular";
   src: url(./fonts/MaisonNeueMono-Regular.otf);
   font-style: normal;
@@ -71,6 +53,10 @@
   background-color: #f4f6fa;
   overflow: hidden;
   position: relative;
+}
+.container-xxl {
+  max-width: 1500px;
+  margin: auto;
 }
 .clear {
   clear: both;
