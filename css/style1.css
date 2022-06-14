@@ -26,7 +26,6 @@ body {
   position: fixed;
   inset: 0;
   height: 100vh;
-  outline: 1px solid red;
   z-index: 9999;
   background: #1794ff;
 }
@@ -34,6 +33,7 @@ body {
 .my-name {
   position: relative;
   font-weight: bold;
+  color: white;
 }
 .my-name::before {
   content: "";
